@@ -1,5 +1,5 @@
-﻿@import '@nativescript/theme/css/core.css';
-@import '@nativescript/theme/css/default.css';
+﻿@import "@nativescript/theme/css/core.css";
+@import "@nativescript/theme/css/default.css";
 
 Button.-primary {
   font-size: 18;
@@ -18,4 +18,16 @@ Button.-primary {
   margin-top: 10;
   width: 28;
   height: 28;
+}
+
+.fas {
+  font-family: "fa-solid-900";
+  font-weight: 900;
+}
+
+.m-icon {
+
+  font-family: "Material Icons", "MaterialIcons-Regular";
+
+  font-weight: 400;
 }

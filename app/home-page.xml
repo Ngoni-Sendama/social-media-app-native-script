@@ -1,40 +1,42 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd">
-  <ActionBar title="CliqCampus" class="action-bar" />
+  <ActionBar title="Insta" class="action-bar" />
 
-  <TabView androidTabsPosition="bottom" class="icon-only-tabs">
+  <TabView androidTabsPosition="bottom" selectedTabTextColor="#c67c4e">
 
     <!-- 🏠 Home -->
-    <TabViewItem title=" " iconSource="res://home">
+    <TabViewItem title="Home" iconSource="res://home">
       <StackLayout>
-        <Label text="Home Content" class="h2 text-center" />
+        <Label text="Welcome to Home Tab" class="h2 text-center" />
+        <Label text="&#xe88a;" class="m-icon" />
       </StackLayout>
     </TabViewItem>
 
     <!-- 📰 Feed -->
-    <TabViewItem title=" " iconSource="res://feed">
+    <TabViewItem title=" Feed" iconSource=" res:// feed">
       <StackLayout>
-        <Label text="Feed Content" class="h2 text-center" />
+        <Label text=" Feed Tab" class=" h2 text-center" />
       </StackLayout>
     </TabViewItem>
 
     <!-- ➕ Add Post -->
-    <TabViewItem title=" " iconSource="res://add">
+    <TabViewItem title=" Add Post" iconSource=" res:// add">
       <StackLayout>
-        <Label text="Create a new post" class="h2 text-center" />
+        <Label text=" Create a new post" class=" h2 text-center" />
       </StackLayout>
     </TabViewItem>
 
     <!-- 💬 Messaging -->
-    <TabViewItem title=" " iconSource="res://chat">
+    <TabViewItem title=" Messaging" iconSource=" res:// chat">
       <StackLayout>
-        <Label text="Messaging Content" class="h2 text-center" />
+        <Label text=" Messaging Tab" class=" h2 text-center" />
       </StackLayout>
     </TabViewItem>
 
     <!-- 👤 Profile -->
-    <TabViewItem title=" " iconSource="res://profile">
+    <TabViewItem title=" Profile" iconSource=" res:// profile">
       <StackLayout>
-        <Label text="Profile Content" class="h2 text-center" />
+        <Label text=" Profile Tab" class=" h2 text-center" />
+        <Label text=" &#xf015;" class=" fas text-center text-2xl" />
       </StackLayout>
     </TabViewItem>
 
