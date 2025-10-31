@@ -1,0 +1,6 @@
+<Page loaded="onPageLoaded">
+  <StackLayout>
+    <Label text="Welcome to Onboard 2" />
+    <Button text="Next → Onboard 3" tap="onNavigateToOnboard3" />
+  </StackLayout>
+</Page>

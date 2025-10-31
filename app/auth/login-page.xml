@@ -1,0 +1,7 @@
+<Page>
+    <StackLayout>
+        <Label text="Login Page" class="h1 text-center" />
+        <Button text="Go to Home Page" class="-primary" tap="HomePage" />
+        <Button text="Register Account" class="-primary" tap="RegisterPage" />
+    </StackLayout>
+</Page>

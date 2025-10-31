@@ -1,0 +1,6 @@
+<Page>
+  <StackLayout>
+    <Label text="Welcome to Onboard 3" />
+    <Button text="Next → Home" tap="onNavigateToHome" />
+  </StackLayout>
+</Page>
