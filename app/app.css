@@ -4,3 +4,18 @@
 Button.-primary {
   font-size: 18;
 }
+/* Hide tab labels for icon-only tabs */
+.icon-only-tabs TabViewItem Label {
+  visibility: collapse;
+}
+
+/* Adjust tab icon size and spacing */
+.icon-only-tabs {
+  height: 60;
+}
+
+.icon-only-tabs TabViewItem Image {
+  margin-top: 10;
+  width: 28;
+  height: 28;
+}

@@ -1,0 +1,5 @@
+<Page>
+  <StackLayout>
+    <Label text="🏠 Home Screen" class="h1 text-center" />
+  </StackLayout>
+</Page>

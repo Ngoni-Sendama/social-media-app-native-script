@@ -1,3 +1,3 @@
 exports.onNavigatingTo = function() {
-    console.log("You are on the home page!");
+    console.log("Home Page loaded with bottom navigation");
 };

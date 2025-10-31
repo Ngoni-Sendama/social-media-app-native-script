@@ -1,0 +1,5 @@
+<Page>
+  <StackLayout>
+    <Label text="Message" class="h1 text-center" />
+  </StackLayout>
+</Page>

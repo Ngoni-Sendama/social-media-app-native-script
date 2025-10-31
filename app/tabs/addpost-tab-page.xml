@@ -1,0 +1,5 @@
+<Page>
+  <StackLayout>
+    <Label text="➕ Add a new post here" class="h1 text-center" />
+  </StackLayout>
+</Page>

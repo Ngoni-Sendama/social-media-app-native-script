@@ -1,5 +1,42 @@
-<Page>
-  <StackLayout>
-    <Label text="🏠 Home Page" class="h1 text-center" />
-  </StackLayout>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+  <ActionBar title="CliqCampus" class="action-bar" />
+
+  <TabView androidTabsPosition="bottom" class="icon-only-tabs">
+
+    <!-- 🏠 Home -->
+    <TabViewItem title=" " iconSource="res://home">
+      <StackLayout>
+        <Label text="Home Content" class="h2 text-center" />
+      </StackLayout>
+    </TabViewItem>
+
+    <!-- 📰 Feed -->
+    <TabViewItem title=" " iconSource="res://feed">
+      <StackLayout>
+        <Label text="Feed Content" class="h2 text-center" />
+      </StackLayout>
+    </TabViewItem>
+
+    <!-- ➕ Add Post -->
+    <TabViewItem title=" " iconSource="res://add">
+      <StackLayout>
+        <Label text="Create a new post" class="h2 text-center" />
+      </StackLayout>
+    </TabViewItem>
+
+    <!-- 💬 Messaging -->
+    <TabViewItem title=" " iconSource="res://chat">
+      <StackLayout>
+        <Label text="Messaging Content" class="h2 text-center" />
+      </StackLayout>
+    </TabViewItem>
+
+    <!-- 👤 Profile -->
+    <TabViewItem title=" " iconSource="res://profile">
+      <StackLayout>
+        <Label text="Profile Content" class="h2 text-center" />
+      </StackLayout>
+    </TabViewItem>
+
+  </TabView>
 </Page>
