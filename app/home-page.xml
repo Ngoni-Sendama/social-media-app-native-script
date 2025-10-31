@@ -98,7 +98,8 @@
               <StackLayout col="0" class="profile-border">
                 <Image src="https://randomuser.me/api/portraits/women/12.jpg" class="profile-pic" />
               </StackLayout>
-              <Label text="Jessica Miles" col="1" class="username" verticalAlignment="center" />
+              <Label text="Jessica Miles" col="1" class="profileName" verticalAlignment="center" />
+              <Label text="@jessicamiles" col="1" class="username" verticalAlignment="center" />
               <Label text="⋮" col="2" class="options" verticalAlignment="center" />
             </GridLayout>
 
@@ -119,7 +120,7 @@
               <StackLayout col="0" class="profile-border">
                 <Image src="https://randomuser.me/api/portraits/men/32.jpg" class="profile-pic" />
               </StackLayout>
-              <Label text="Michael Clark" col="1" class="username" />
+              <Label text="Michael Clark" col="1" class="profileName" />
               <Label text="⋮" col="2" class="options" />
             </GridLayout>
 
@@ -137,7 +138,7 @@
               <StackLayout col="0" class="profile-border">
                 <Image src="https://randomuser.me/api/portraits/women/45.jpg" class="profile-pic" />
               </StackLayout>
-              <Label text="Sophia Turner" col="1" class="username" />
+              <Label text="Sophia Turner" col="1" class="profileName" />
               <Label text="⋮" col="2" class="options" />
             </GridLayout>
 
@@ -155,7 +156,7 @@
               <StackLayout col="0" class="profile-border">
                 <Image src="https://randomuser.me/api/portraits/men/67.jpg" class="profile-pic" />
               </StackLayout>
-              <Label text="Daniel Harris" col="1" class="username" />
+              <Label text="Daniel Harris" col="1" class="profileName" />
               <Label text="⋮" col="2" class="options" />
             </GridLayout>
 
