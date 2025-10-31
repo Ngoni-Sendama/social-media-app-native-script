@@ -1,5 +1,18 @@
-<Page>
-  <StackLayout>
-    <Label text="Message" class="h1 text-center" />
-  </StackLayout>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+  <GridLayout rows="*, auto">
+
+    <!-- Main content -->
+    <StackLayout row="0">
+      <Label text="Message content here" textAlignment="center" />
+    </StackLayout>
+
+    <!-- Bottom Navigation Bar -->
+    <FlexboxLayout row="1" justifyContent="space-around" class="bottom-bar">
+   <Label text="&#xe88a;" class="m-icon" tap="goHome" />
+      <Label text="&#xf07f;" class="m-icon" tap="goFeed" />
+      <Label text="&#xe147;" class="m-icon" tap="goAddPost" />
+      <Label text="&#xe0d8;" class="m-icon active" tap="goMessages" />
+      <Label text="&#xe853;" class="m-icon" tap="goProfile" />
+    </FlexboxLayout>
+  </GridLayout>
 </Page>

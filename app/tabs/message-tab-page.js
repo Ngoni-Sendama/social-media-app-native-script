@@ -38,4 +38,3 @@ exports.goProfile = function () {
         clearHistory: true
     });
 };
-

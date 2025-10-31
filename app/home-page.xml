@@ -1,44 +1,185 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd">
-  <ActionBar title="Insta" class="action-bar" />
+  <GridLayout rows="*, auto" class="container">
 
-  <TabView androidTabsPosition="bottom" selectedTabTextColor="#c67c4e">
+    <!-- Main content -->
+    <StackLayout row="0">
 
-    <!-- 🏠 Home -->
-    <TabViewItem title="Home" iconSource="res://home">
-      <StackLayout>
-        <Label text="Welcome to Home Tab" class="h2 text-center" />
-        <Label text="&#xe88a;" class="m-icon" />
-      </StackLayout>
-    </TabViewItem>
 
-    <!-- 📰 Feed -->
-    <TabViewItem title=" Feed" iconSource=" res:// feed">
-      <StackLayout>
-        <Label text=" Feed Tab" class=" h2 text-center" />
-      </StackLayout>
-    </TabViewItem>
+      <FlexboxLayout flexWrap="wrap" backgroundColor="#f6f6f6" justifyContent="space-between"
+        class="headerIcons">
+        <Image
+          src="https://www.pngplay.com/wp-content/uploads/12/Instagram-Logo-No-Background.png"
+          width="140" />
+        <FlexboxLayout flexWrap="wrap" backgroundColor="#f6f6f6" justifyContent="space-around">
+          <Label text="&#xe8b6;" class="m-icon icons" />
+          <Label text="&#xe7f5;" class="m-icon icons" />
+        </FlexboxLayout>
+      </FlexboxLayout>
 
-    <!-- ➕ Add Post -->
-    <TabViewItem title=" Add Post" iconSource=" res:// add">
-      <StackLayout>
-        <Label text=" Create a new post" class=" h2 text-center" />
-      </StackLayout>
-    </TabViewItem>
+      <ScrollView orientation="horizontal" class="stories-scroll">
+        <StackLayout orientation="horizontal" spacing="12" padding="10">
 
-    <!-- 💬 Messaging -->
-    <TabViewItem title=" Messaging" iconSource=" res:// chat">
-      <StackLayout>
-        <Label text=" Messaging Tab" class=" h2 text-center" />
-      </StackLayout>
-    </TabViewItem>
+          <!-- Story 1 -->
+          <GridLayout class="story-card" rows="*, auto" columns="*">
+            <Image
+              src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb"
+              class="story-bg" stretch="aspectFill" />
+            <StackLayout class="overlay" verticalAlignment="bottom" padding="10">
+              <Image
+                src="https://randomuser.me/api/portraits/women/45.jpg"
+                class="profile-pic" />
+              <Label text="Emily Carter" class="story-name" />
+            </StackLayout>
+          </GridLayout>
 
-    <!-- 👤 Profile -->
-    <TabViewItem title=" Profile" iconSource=" res:// profile">
-      <StackLayout>
-        <Label text=" Profile Tab" class=" h2 text-center" />
-        <Label text=" &#xf015;" class=" fas text-center text-2xl" />
-      </StackLayout>
-    </TabViewItem>
+          <!-- Story 2 -->
+          <GridLayout class="story-card" rows="*, auto" columns="*">
+            <Image
+              src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+              class="story-bg" stretch="aspectFill" />
+            <StackLayout class="overlay" verticalAlignment="bottom" padding="10">
+              <Image
+                src="https://randomuser.me/api/portraits/men/12.jpg"
+                class="profile-pic" />
+              <Label text="Alex Johnson" class="story-name" />
+            </StackLayout>
+          </GridLayout>
 
-  </TabView>
+          <!-- Story 3 -->
+          <GridLayout class="story-card" rows="*, auto" columns="*">
+            <Image
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+              class="story-bg" stretch="aspectFill" />
+            <StackLayout class="overlay" verticalAlignment="bottom" padding="10">
+              <Image
+                src="https://randomuser.me/api/portraits/women/8.jpg"
+                class="profile-pic" />
+              <Label text="Sophia Turner" class="story-name" />
+            </StackLayout>
+          </GridLayout>
+
+          <!-- Story 4 -->
+          <GridLayout class="story-card" rows="*, auto" columns="*">
+            <Image
+              src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+              class="story-bg" stretch="aspectFill" />
+            <StackLayout class="overlay" verticalAlignment="bottom" padding="10">
+              <Image
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                class="profile-pic" />
+              <Label text="Liam Brown" class="story-name" />
+            </StackLayout>
+          </GridLayout>
+
+          <!-- Story 5 -->
+          <GridLayout class="story-card" rows="*, auto" columns="*">
+            <Image
+              src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7"
+              class="story-bg" stretch="aspectFill" />
+            <StackLayout class="overlay" verticalAlignment="bottom" padding="10">
+              <Image
+                src="https://randomuser.me/api/portraits/women/28.jpg"
+                class="profile-pic" />
+              <Label text="Olivia Green" class="story-name" />
+            </StackLayout>
+          </GridLayout>
+
+        </StackLayout>
+      </ScrollView>
+
+      <ScrollView>
+        <StackLayout spacing="20" padding="10">
+
+          <!-- Post 1 -->
+          <StackLayout class="post-card">
+            <!-- Header -->
+            <GridLayout columns="auto, *, auto" rows="auto" class="post-header"
+              verticalAlignment="center">
+              <StackLayout col="0" class="profile-border">
+                <Image src="https://randomuser.me/api/portraits/women/12.jpg" class="profile-pic" />
+              </StackLayout>
+              <Label text="Jessica Miles" col="1" class="username" verticalAlignment="center" />
+              <Label text="⋮" col="2" class="options" verticalAlignment="center" />
+            </GridLayout>
+
+            <!-- Post Image -->
+            <Image src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+              class="post-image" stretch="aspectFill" />
+
+            <!-- Actions -->
+            <GridLayout columns="auto, auto" class="post-actions" marginTop="8">
+              <Label col="0" text="♥ Like" class="action-btn" />
+              <Label col="1" text="⤴ Share" class="action-btn" marginLeft="20" />
+            </GridLayout>
+          </StackLayout>
+
+          <!-- Post 2 -->
+          <StackLayout class="post-card">
+            <GridLayout columns="auto, *, auto" class="post-header">
+              <StackLayout col="0" class="profile-border">
+                <Image src="https://randomuser.me/api/portraits/men/32.jpg" class="profile-pic" />
+              </StackLayout>
+              <Label text="Michael Clark" col="1" class="username" />
+              <Label text="⋮" col="2" class="options" />
+            </GridLayout>
+
+            <Image src="https://images.unsplash.com/photo-1533750349088-cd871a92f312"
+              class="post-image" stretch="aspectFill" />
+            <GridLayout columns="auto, auto" class="post-actions" marginTop="8">
+              <Label text="♥ Like" col="0" class="action-btn" />
+              <Label text="⤴ Share" col="1" class="action-btn" marginLeft="20" />
+            </GridLayout>
+          </StackLayout>
+
+          <!-- Post 3 -->
+          <StackLayout class="post-card">
+            <GridLayout columns="auto, *, auto" class="post-header">
+              <StackLayout col="0" class="profile-border">
+                <Image src="https://randomuser.me/api/portraits/women/45.jpg" class="profile-pic" />
+              </StackLayout>
+              <Label text="Sophia Turner" col="1" class="username" />
+              <Label text="⋮" col="2" class="options" />
+            </GridLayout>
+
+            <Image src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
+              class="post-image" stretch="aspectFill" />
+            <GridLayout columns="auto, auto" class="post-actions" marginTop="8">
+              <Label text="♥ Like" col="0" class="action-btn" />
+              <Label text="⤴ Share" col="1" class="action-btn" marginLeft="20" />
+            </GridLayout>
+          </StackLayout>
+
+          <!-- Post 4 -->
+          <StackLayout class="post-card">
+            <GridLayout columns="auto, *, auto" class="post-header">
+              <StackLayout col="0" class="profile-border">
+                <Image src="https://randomuser.me/api/portraits/men/67.jpg" class="profile-pic" />
+              </StackLayout>
+              <Label text="Daniel Harris" col="1" class="username" />
+              <Label text="⋮" col="2" class="options" />
+            </GridLayout>
+
+            <Image src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+              class="post-image" stretch="aspectFill" />
+            <GridLayout columns="auto, auto" class="post-actions" marginTop="8">
+              <Label text="♥ Like" col="0" class="action-btn" />
+              <Label text="⤴ Share" col="1" class="action-btn" marginLeft="20" />
+            </GridLayout>
+          </StackLayout>
+
+        </StackLayout>
+      </ScrollView>
+
+
+    </StackLayout>
+
+    <!-- Bottom Navigation Bar -->
+    <FlexboxLayout row="1" justifyContent="space-around" class="bottom-bar">
+      <Label text="&#xe88a;" class="m-icon active" tap="goHome" />
+      <Label text="&#xf07f;" class="m-icon" tap="goFeed" />
+      <Label text="&#xe147;" class="m-icon" tap="goAddPost" />
+      <Label text="&#xe0d8;" class="m-icon" tap="goMessages" />
+      <Label text="&#xe853;" class="m-icon" tap="goProfile" />
+    </FlexboxLayout>
+  </GridLayout>
 </Page>

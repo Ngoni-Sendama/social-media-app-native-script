@@ -4,30 +4,27 @@
 Button.-primary {
   font-size: 18;
 }
-/* Hide tab labels for icon-only tabs */
-.icon-only-tabs TabViewItem Label {
-  visibility: collapse;
-}
-
-/* Adjust tab icon size and spacing */
-.icon-only-tabs {
-  height: 60;
-}
-
-.icon-only-tabs TabViewItem Image {
-  margin-top: 10;
-  width: 28;
-  height: 28;
-}
-
-.fas {
-  font-family: "fa-solid-900";
-  font-weight: 900;
-}
 
 .m-icon {
-
   font-family: "Material Icons", "MaterialIcons-Regular";
 
   font-weight: 400;
+  font-size: 36;
+  color: #888;
+  font-size: 40;
+}
+
+.m-icon.active {
+  color: #f9622e;
+  font-size: 50;
+}
+
+.bottom-bar {
+  background-color: #fefffe;
+  margin: 18;
+  padding: 18 0;
+  border-top-width: 1;
+  border-color: #f6f6f6;
+  border-radius: 15;
+ 
 }
