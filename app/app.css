@@ -82,3 +82,7 @@ Image {
   font-size: 20;
   width: 100%;
 }
+
+.btn-secondary {
+  color: #f9622e;
+}

@@ -1,7 +1,64 @@
-<Page>
-    <StackLayout>
-        <Label text="Login Page" class="h1 text-center" />
-        <Button text="Go to Home Page" class="-primary" tap="HomePage" />
-        <Button text="Register Account" class="-primary" tap="RegisterPage" />
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo"
+    actionBarHidden="true">
+    <StackLayout class="container">
+        <Label text="Sign In" class="signInTitle" />
+        <Label text="Hi! Welcome back, you've been missed" class="signInDescription" />
+
+        <!-- Forms -->
+        <StackLayout class="formContainer" verticalAlignment="center" horizontalAlignment="center"
+            spacing="8">
+            <Label text="Email" class="formLabels" />
+            <TextField hint="example@gmail.com" class="input-field" returnKeyType="next" />
+
+            <Label text="Password" class="formLabels" />
+            <TextField hint="•••••••••••••••••" secure="true"
+                class="input-field" returnKeyType="done" secureWithoutAutofill="true" />
+        </StackLayout>
+        <!-- Forgot Password -->
+        <StackLayout>
+            <Label text="Forgot Password?" class="color-primary forgotPassword" />
+        </StackLayout>
+
+        <!-- Buttons -->
+        <StackLayout class="buttonsSection">
+            <Button text="Sign In" class="btn-primary" tap="HomePage" />
+        </StackLayout>
+
+
+        <FlexboxLayout class="dividerContainer"
+            flexDirection="row"
+            justifyContent="center"
+            alignItems="center">
+
+            <StackLayout class="dividerLine"></StackLayout>
+            <Label text="or Sign in with" class="dividerText" />
+            <StackLayout class="dividerLine"></StackLayout>
+
+        </FlexboxLayout>
+
+
+        <FlexboxLayout
+            class="iconsSignIn"
+            flexDirection="row"
+            justifyContent="space-around"
+            alignItems="center"
+            verticalAlignment="center"
+            horizontalAlignment="center">
+
+            <Image src="https://cdn-icons-png.flaticon.com/128/0/747.png" width="36" />
+            <Image src="https://cdn-icons-png.flaticon.com/128/300/300221.png" width="36" />
+            <Image src="https://cdn-icons-png.flaticon.com/128/3128/3128304.png" width="36" />
+        </FlexboxLayout>
+        <StackLayout>
+            <Label class="signInDescription" textWrap="true">
+                <FormattedString>
+                    <Span text="Don't have an account? " />
+                </FormattedString>
+            </Label>
+            <Button text="Create An Account" class="btn-secondary clickable" tap="RegisterPage" />
+
+        </StackLayout>
+
+
     </StackLayout>
 </Page>

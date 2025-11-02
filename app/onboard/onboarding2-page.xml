@@ -1,4 +1,5 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo"
+  actionBarHidden="true">
   <FlexboxLayout class="containers" verticalAlignment="center" horizontalAlignment="center"
     spacing="16">
     <!-- Image -->

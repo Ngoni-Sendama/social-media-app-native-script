@@ -1,0 +1,101 @@
+Label {
+  text-align: center;
+}
+.signInTitle {
+  color: #242424;
+  font-size: 26;
+  font-weight: 400;
+  margin-top: 20;
+}
+
+.signInDescription {
+  color: #797979;
+  font-size: 16;
+  margin-top: 12;
+}
+
+.formContainer {
+  width: 100%;
+  align-items: center; /* Center everything horizontally */
+  margin-top: 12;
+}
+
+.formLabels {
+  color: #050202;
+  text-align: left; /* Align text within label */
+  width: 90%; /* Match the text field width */
+  padding: 4 0; /* Vertical spacing */
+  margin-top: 10;
+}
+
+.input-field {
+  width: 90%;
+  height: 50;
+  border-width: 1;
+  border-color: #f6f6f6;
+  border-radius: 8;
+  padding-left: 8;
+  font-size: 16;
+  color: #333;
+  background-color: #f7f6f7;
+  placeholder-color: #999;
+  margin-top: 8;
+  margin-bottom: 8;
+}
+
+.forgotPassword {
+  text-align: right;
+  text-decoration: underline;
+}
+
+.buttonsSection {
+  padding: 0 8;
+}
+
+.iconsSignIn {
+  flex-direction: row;
+  justify-content: space-around; /* evenly spaced row */
+  align-items: center;
+  width: 100%;
+  margin-top: 24;
+}
+
+.iconsSignIn {
+  flex-direction: row;
+  justify-content: space-around; /* space around all icons */
+  align-items: center;
+  width: 100%;
+  margin-top: 24;
+}
+
+.iconsSignIn {
+  padding: 0 50;
+}
+
+.clickable {
+  font-size: 17;
+  font-weight: 700;
+  margin-top: 18;
+}
+
+.dividerContainer {
+  width: 100%;
+  margin-top: 5;
+  margin-bottom: 24;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 17;
+}
+
+.dividerLine {
+  height: 1;
+  background-color: #ccc;
+  flex-grow: 1; /* ✅ works in FlexboxLayout */
+  margin: 0 8;
+}
+
+.dividerText {
+  color: #666;
+  font-size: 14;
+}
