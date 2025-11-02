@@ -5,6 +5,7 @@
   <GridLayout rows="*, auto" class="container">
     <StackLayout row="0">
 
+
       <ScrollView orientation="horizontal" class="stories-scroll">
         <StackLayout orientation="horizontal" spacing="12" padding="10">
 
@@ -167,8 +168,8 @@
     <!-- Bottom Navigation Bar -->
     <FlexboxLayout row="1" justifyContent="space-around" class="bottom-bar">
       <Label text="&#xe88a;" class="m-icon active" tap="goHome" />
-
-      <Label text="&#xe147;" class="m-icon" />
+      <!-- <Label text="&#xf07f;" class="m-icon" tap="goFeed" /> -->
+      <Label text="&#xe147;" class="m-icon" tap="goAddPost" />
       <Label text="&#xe0d8;" class="m-icon" tap="goMessages" />
       <Label text="&#xe853;" class="m-icon" tap="goProfile" />
     </FlexboxLayout>
