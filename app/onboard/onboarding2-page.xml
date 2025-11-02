@@ -1,6 +1,31 @@
-<Page loaded="onPageLoaded">
-  <StackLayout>
-    <Label text="Welcome to Onboard 2" />
-    <Button text="Next → Onboard 3" tap="onNavigateToOnboard3" />
-  </StackLayout>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <FlexboxLayout class="containers" verticalAlignment="center" horizontalAlignment="center"
+    spacing="16">
+    <!-- Image -->
+    <StackLayout>
+      <Image
+        src="~/images/Video-call-pana.png"
+        class="onboarding-image" />
+    </StackLayout>
+    <!-- Text -->
+    <StackLayout>
+      <Label class="heading" textWrap="true">
+        <FormattedString>
+          <Span text="Discover the  " />
+          <Span text="Best Short Videos" class="highlight" />
+          <Span text="from the crowd" />
+        </FormattedString>
+      </Label>
+
+      <Label
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae porta ipsum"
+        class="description" textWrap="true" />
+
+      <Button text="Next" class="btn-primary" tap="onNavigateToOnboard3" />
+
+    </StackLayout>
+
+
+  </FlexboxLayout>
 </Page>
+  

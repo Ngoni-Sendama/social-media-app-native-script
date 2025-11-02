@@ -1,8 +1,27 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
-    <ActionBar title="My App" icon="" />
+    <FlexboxLayout class="containers" verticalAlignment="center" horizontalAlignment="center"
+        spacing="16">
 
-    <StackLayout class="p-20">
-        <Label text="Tap the button" class="h1 text-center" />
-        <Button text="Go to Second Page" class="-primary" tap="onNavigateToOnboard2" />
-    </StackLayout>
+        <!-- Image -->
+        <StackLayout>
+            <Image
+                src="~/images/Social media-cuate.png"
+                class="onboarding-image" />
+        </StackLayout>
+        <!-- Text -->
+        <StackLayout>
+            <Label class="heading" textWrap="true">
+                <FormattedString>
+                    <Span text="Your Premier " />
+                    <Span text="Social Connection App" class="highlight" />
+                </FormattedString>
+            </Label>
+            <Label
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae porta ipsum"
+                class="description" textWrap="true" />
+            <Button text="Let's Go" class="btn-primary" tap="onNavigateToOnboard2" />
+
+        </StackLayout>
+
+    </FlexboxLayout>
 </Page>

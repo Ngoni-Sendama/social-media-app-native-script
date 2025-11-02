@@ -1,9 +1,6 @@
-﻿@import "@nativescript/theme/css/core.css";
+﻿/* @import "@nativescript/theme/css/core.css";
 @import "@nativescript/theme/css/default.css";
-
-Button.-primary {
-  font-size: 18;
-}
+ */
 
 .m-icon {
   font-family: "Material Icons", "MaterialIcons-Regular";
@@ -12,6 +9,10 @@ Button.-primary {
   font-size: 36;
   color: #888;
   font-size: 40;
+}
+
+.color-primary {
+  color: #f9622e;
 }
 
 .m-icon.active {
@@ -26,5 +27,58 @@ Button.-primary {
   border-top-width: 1;
   border-color: #f6f6f6;
   border-radius: 15;
- 
+}
+
+.container {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 40 20;
+}
+
+.heading {
+  font-size: 26;
+  text-align: center;
+  font-weight: 700;
+  color: #242424;
+  padding: 0 20;
+}
+
+.highlight {
+  color: #f9622e;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f9fafc;
+  height: 100%;
+  width: 100%;
+  padding: 12;
+}
+
+Image {
+  margin-bottom: 24;
+  border-radius: 16;
+}
+.description {
+  color: #242424;
+  text-align: center;
+  margin: 5 24;
+  font-size: 14;
+}
+.btn-primary {
+  background-color: #f9622e;
+  color: #fff;
+  margin-top: 20;
+  font-weight: 700;
+  padding: 15 15;
+  border-radius: 25;
+  margin-bottom: 15;
+  font-size: 20;
+  width: 100%;
 }

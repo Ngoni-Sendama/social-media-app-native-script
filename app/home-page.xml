@@ -1,9 +1,6 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd">
   <GridLayout rows="*, auto" class="container">
-
-    <!-- Main content -->
     <StackLayout row="0">
-
 
       <FlexboxLayout flexWrap="wrap" backgroundColor="#f6f6f6" justifyContent="space-between"
         class="headerIcons">
@@ -99,7 +96,8 @@
                 <Image src="https://randomuser.me/api/portraits/women/12.jpg" class="profile-pic" />
               </StackLayout>
               <Label text="Jessica Miles" col="1" class="profileName" verticalAlignment="center" />
-              <Label text="@jessicamiles" col="1" class="username" verticalAlignment="center" />
+              <!-- <Label text="@jessicamiles" col="1" row="2" class="username"
+              verticalAlignment="center" /> -->
               <Label text="⋮" col="2" class="options" verticalAlignment="center" />
             </GridLayout>
 

@@ -1,6 +1,31 @@
-<Page>
-  <StackLayout>
-    <Label text="Welcome to Onboard 3" />
-    <Button text="Next → Home" tap="onNavigateToHome" />
-  </StackLayout>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <FlexboxLayout class="containers" verticalAlignment="center" horizontalAlignment="center"
+    spacing="16">
+    <!-- Image -->
+    <StackLayout>
+      <Image
+        src="~/images/Halloween Instagram feed-rafiki.png"
+        class="onboarding-image" />
+    </StackLayout>
+    <!-- Text -->
+    <StackLayout>
+      <Label class="heading" textWrap="true">
+        <FormattedString>
+          <Span text="See What " />
+          <Span text="Your Connections " class="highlight" />
+          <Span text="Are Sharing" />
+        </FormattedString>
+      </Label>
+
+
+      <Label
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae porta ipsum"
+        class="description" textWrap="true" />
+
+      <Button text="Let's Get Started" class="btn-primary" tap="onNavigateToHome" />
+
+    </StackLayout>
+
+  </FlexboxLayout>
 </Page>
+  
