@@ -4,13 +4,14 @@
     <!-- Main content -->
     <StackLayout row="0">
       <Label text="feed content here" textAlignment="center" />
+      <Slider value="75" minValue="0" maxValue="100" />
     </StackLayout>
 
     <!-- Bottom Navigation Bar -->
     <FlexboxLayout row="1" justifyContent="space-around" class="bottom-bar">
-     <Label text="&#xe88a;" class="m-icon" tap="goHome" />
+      <Label text="&#xe88a;" class="m-icon" tap="goHome" />
       <Label text="&#xf07f;" class="m-icon active" tap="goFeed" />
-      <Label text="&#xe147;" class="m-icon" tap="goAddPost" />
+      <Label text="&#xe147;" class="m-icon" />
       <Label text="&#xe0d8;" class="m-icon" tap="goMessages" />
       <Label text="&#xe853;" class="m-icon" tap="goProfile" />
     </FlexboxLayout>

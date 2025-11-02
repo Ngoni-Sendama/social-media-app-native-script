@@ -1,16 +1,103 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd">
-  <GridLayout rows="*, auto">
+  <ActionBar title="Profile" class="action-bar">
 
-    <!-- Main content -->
-    <StackLayout row="0">
-      <Label text="Profile content here" textAlignment="center" />
-    </StackLayout>
+  </ActionBar>
+  <GridLayout rows="*, auto" class="profile-container">
+
+    <!-- MAIN CONTENT -->
+    <ScrollView row="0">
+      <StackLayout class="profile-content" horizontalAlignment="center">
+
+        <!-- Profile Header -->
+        <StackLayout class="profile-header" horizontalAlignment="center">
+          <Image src="https://randomuser.me/api/portraits/men/67.jpg" class="profile-avatar" />
+          <Label text="Daniel Harris" class="profile-name" />
+          <Label text="@danielh" class="profile-username" />
+          <Label text="www.danielharris.com" class="profile-website" />
+        </StackLayout>
+
+        <!-- Stats Section -->
+        <GridLayout columns="*,*,*,*" class="profile-stats">
+          <StackLayout col="0" class="stat-box">
+            <Label text="521" class="stat-number" />
+            <Label text="Posts" class="stat-label" />
+          </StackLayout>
+          <StackLayout col="1" class="stat-box">
+            <Label text="13.2K" class="stat-number" />
+            <Label text="Followers" class="stat-label" />
+          </StackLayout>
+          <StackLayout col="2" class="stat-box">
+            <Label text="320" class="stat-number" />
+            <Label text="Following" class="stat-label" />
+          </StackLayout>
+          <StackLayout col="3" class="stat-box">
+            <Label text="1.1M" class="stat-number" />
+            <Label text="Likes" class="stat-label" />
+          </StackLayout>
+        </GridLayout>
+        <!-- Websites -->
+        <StackLayout>
+          <GridLayout columns="*,*,*" rows="auto,auto,auto" class="cards-grid">
+
+            <!-- Row 1 -->
+            <StackLayout col="0" row="0" class="card">
+              <Image src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d"
+                class="card-image" />
+            </StackLayout>
+
+            <StackLayout col="1" row="0" class="card">
+              <Image src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+                class="card-image" />
+            </StackLayout>
+
+            <StackLayout col="2" row="0" class="card">
+              <Image src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
+                class="card-image" />
+            </StackLayout>
+
+            <!-- Row 2 -->
+            <StackLayout col="0" row="1" class="card">
+              <Image src="https://images.unsplash.com/photo-1533750349088-cd871a92f312"
+                class="card-image" />
+            </StackLayout>
+
+            <StackLayout col="1" row="1" class="card">
+              <Image src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7"
+                class="card-image" />
+            </StackLayout>
+
+            <StackLayout col="2" row="1" class="card">
+              <Image src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb"
+                class="card-image" />
+            </StackLayout>
+
+            <!-- Row 3 -->
+            <StackLayout col="0" row="2" class="card">
+              <Image src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+                class="card-image" />
+            </StackLayout>
+
+            <StackLayout col="1" row="2" class="card">
+              <Image src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0"
+                class="card-image" />
+            </StackLayout>
+
+            <StackLayout col="2" row="2" class="card">
+              <Image src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+                class="card-image" />
+            </StackLayout>
+
+          </GridLayout>
+        </StackLayout>
+
+      </StackLayout>
+    </ScrollView>
 
     <!-- Bottom Navigation Bar -->
     <FlexboxLayout row="1" justifyContent="space-around" class="bottom-bar">
-     <Label text="&#xe88a;" class="m-icon" tap="goHome" />
-      <Label text="&#xf07f;" class="m-icon" tap="goFeed" />
-      <Label text="&#xe147;" class="m-icon" tap="goAddPost" />
+      <Label text="&#xe88a;" class="m-icon" tap="goHome" />
+
+      <Label text="&#xe147;" class="m-icon" />
       <Label text="&#xe0d8;" class="m-icon" tap="goMessages" />
       <Label text="&#xe853;" class="m-icon active" tap="goProfile" />
     </FlexboxLayout>

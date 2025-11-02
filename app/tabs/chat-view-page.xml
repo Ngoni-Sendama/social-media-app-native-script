@@ -1,0 +1,66 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" class="chat-view-page">
+    <GridLayout rows="auto, *, auto">
+
+        <!-- Top Bar -->
+        <ActionBar class="action-bar" flat="true">
+            <!-- Back icon -->
+            <ActionItem ios.position="left" android.position="actionBar">
+                <Label text="&#xe5c4;" class="m-icon back-icon" tap="goBack" />
+            </ActionItem>
+
+            <!-- Title / Contact Info -->
+            <StackLayout orientation="horizontal" class="chat-header">
+                <Image src="https://randomuser.me/api/portraits/women/45.jpg"
+                    class="chat-avatar-small" />
+                <Label text="Emily Carter" class="chat-title" />
+            </StackLayout>
+
+            <!-- Call / Video icons -->
+            <ActionItem ios.position="right" android.position="actionBar">
+                <Label text="&#xe0b0;" class="m-icon call-icon" />
+            </ActionItem>
+            <ActionItem ios.position="right" android.position="actionBar">
+                <Label text="&#xe04b;" class="m-icon video-icon" />
+            </ActionItem>
+        </ActionBar>
+
+        <!-- Messages area -->
+        <ScrollView row="1">
+            <StackLayout class="messages-list">
+
+                <!-- Received Message -->
+                <StackLayout class="message-row left">
+                    <StackLayout class="message-bubble received">
+                        <Label text="Hey! Are we still meeting later?" textWrap="true"
+                            class="message-text" />
+                    </StackLayout>
+                </StackLayout>
+
+                <!-- Sent Message -->
+                <StackLayout class="message-row right">
+                    <StackLayout class="message-bubble sent">
+                        <Label text="Yes! Let’s meet at 6 PM at the café ☕" textWrap="true"
+                            class="message-text" />
+                    </StackLayout>
+                </StackLayout>
+
+                <!-- Received Message -->
+                <StackLayout class="message-row left">
+                    <StackLayout class="message-bubble received">
+                        <Label text="Perfect! Can’t wait 😄" textWrap="true" class="message-text" />
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Input Bar -->
+        <GridLayout row="2" columns="*, auto" class="input-bar">
+            <TextField hint="Message..." class="message-input" />
+            <Label text="&#xe163;" class="m-icon send-icon" />
+            <Label text="&#xe0d8;" class="m-icon active" tap="goMessages" />
+        </GridLayout>
+
+
+    </GridLayout>
+</Page>

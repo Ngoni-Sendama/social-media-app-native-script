@@ -86,3 +86,21 @@ Image {
 .btn-secondary {
   color: #f9622e;
 }
+.action-bar {
+  background-color: #f9622e; /* Black background */
+  color: #fff; /* White text */
+  height: 123;
+}
+
+/* Ensure title text and icons are visible */
+.action-bar Label {
+  color: #000000;
+  font-weight: bold;
+}
+
+.action-bar .action-item {
+  color: #000000;
+}
+.m-icon.profile-icon {
+  color: #f9fafc;
+}

@@ -1,17 +1,9 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" actionBarHidden="true">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+  <ActionBar title="Home" class="action-bar">
+
+  </ActionBar>
   <GridLayout rows="*, auto" class="container">
     <StackLayout row="0">
-
-      <FlexboxLayout flexWrap="wrap" backgroundColor="#f6f6f6" justifyContent="space-between"
-        class="headerIcons">
-        <Image
-          src="https://www.pngplay.com/wp-content/uploads/12/Instagram-Logo-No-Background.png"
-          width="140" />
-        <FlexboxLayout flexWrap="wrap" backgroundColor="#f6f6f6" justifyContent="space-around">
-          <Label text="&#xe8b6;" class="m-icon icons" />
-          <Label text="&#xe7f5;" class="m-icon icons" />
-        </FlexboxLayout>
-      </FlexboxLayout>
 
       <ScrollView orientation="horizontal" class="stories-scroll">
         <StackLayout orientation="horizontal" spacing="12" padding="10">
@@ -175,8 +167,8 @@
     <!-- Bottom Navigation Bar -->
     <FlexboxLayout row="1" justifyContent="space-around" class="bottom-bar">
       <Label text="&#xe88a;" class="m-icon active" tap="goHome" />
-      <Label text="&#xf07f;" class="m-icon" tap="goFeed" />
-      <Label text="&#xe147;" class="m-icon" tap="goAddPost" />
+
+      <Label text="&#xe147;" class="m-icon" />
       <Label text="&#xe0d8;" class="m-icon" tap="goMessages" />
       <Label text="&#xe853;" class="m-icon" tap="goProfile" />
     </FlexboxLayout>

@@ -7,3 +7,11 @@ exports.LoginPage = function () {
         clearHistory: true
     });
 };
+
+
+exports.HomePage = function () {
+    Frame.topmost().navigate({
+        moduleName: "home-page",
+        clearHistory: true
+    });
+};

@@ -2,15 +2,32 @@
   <GridLayout rows="*, auto">
 
     <!-- Main content -->
-    <StackLayout row="0">
-      <Label text="AddPost content here" textAlignment="center" />
-    </StackLayout>
+    <ScrollView row="0">
+      <StackLayout class="addpost-container">
+
+        <!-- Upload area -->
+        <StackLayout class="upload-box" tap="onSelectImage">
+          <Image src="~/images/add_image_placeholder.png" class="upload-icon" />
+          <Label text="Tap to add photo or video" class="upload-text" />
+        </StackLayout>
+
+        <!-- Caption box -->
+        <StackLayout class="caption-box">
+          <TextView hint="Write a caption..." class="caption-input" />
+        </StackLayout>
+
+        <!-- Post button -->
+        <Button text="Share Post" class="share-btn" tap="onSharePost" />
+
+      </StackLayout>
+    </ScrollView>
+
 
     <!-- Bottom Navigation Bar -->
     <FlexboxLayout row="1" justifyContent="space-around" class="bottom-bar">
       <Label text="&#xe88a;" class="m-icon" tap="goHome" />
-      <Label text="&#xf07f;" class="m-icon" tap="goFeed" />
-      <Label text="&#xe147;" class="m-icon active" tap="goAddPost" />
+
+      <Label text="&#xe147;" class="m-icon active" />
       <Label text="&#xe0d8;" class="m-icon" tap="goMessages" />
       <Label text="&#xe853;" class="m-icon" tap="goProfile" />
     </FlexboxLayout>

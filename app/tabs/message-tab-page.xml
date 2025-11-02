@@ -1,18 +1,176 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd">
-  <GridLayout rows="*, auto">
+  <ActionBar title="Messages" class="action-bar">
 
-    <!-- Main content -->
-    <StackLayout row="0">
-      <Label text="Message content here" textAlignment="center" />
-    </StackLayout>
+  </ActionBar>
 
-    <!-- Bottom Navigation Bar -->
+  <GridLayout rows="*, auto" class="messages-container">
+
+    <!-- MAIN CONTENT -->
+    <ScrollView row="0">
+      <StackLayout class="chat-list">
+
+        <!-- Chat 1 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/women/45.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Emily Carter" class="chat-name" />
+            <Label text="Hey, are we still meeting later?" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="2h" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 2 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/men/12.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Alex Johnson" class="chat-name" />
+            <Label text="Cool, I'll send you the files soon." class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="1d" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 3 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/women/8.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Sophia Turner" class="chat-name" />
+            <Label text="Loved your last post 🔥" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="3d" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 4 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/men/32.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Liam Brown" class="chat-name" />
+            <Label text="Thanks! Let's catch up soon." class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="5d" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 5 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/women/28.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Olivia Green" class="chat-name" />
+            <Label text="You free tomorrow?" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="1w" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 6 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/men/67.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Daniel Harris" class="chat-name" />
+            <Label text="Haha that was hilarious 😂" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="1w" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 7 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/women/34.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Ava Lee" class="chat-name" />
+            <Label text="Can you send me the pic again?" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="8d" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 8 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/men/19.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Ethan Kim" class="chat-name" />
+            <Label text="Yup, let's do it!" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="9d" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 9 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/women/22.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Mia Lopez" class="chat-name" />
+            <Label text="Ok cool, see you soon 💕" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="10d" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 10 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/men/84.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Noah Smith" class="chat-name" />
+            <Label text="That track you sent is fire 🔥" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="2w" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 11 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/women/16.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Luna Davis" class="chat-name" />
+            <Label text="Missed your call 😅" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="2w" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 12 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/men/45.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Logan Wilson" class="chat-name" />
+            <Label text="Did you check that link?" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="3w" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 13 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/women/72.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Isabella Reed" class="chat-name" />
+            <Label text="I'll text you when I get there!" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="3w" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 14 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/men/29.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Lucas Johnson" class="chat-name" />
+            <Label text="Great meeting today 👍" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="4w" class="chat-time" />
+        </GridLayout>
+
+        <!-- Chat 15 -->
+        <GridLayout columns="auto, *, auto" class="chat-item" tap="onOpenChat">
+          <Image src="https://randomuser.me/api/portraits/women/14.jpg" class="chat-avatar" />
+          <StackLayout col="1">
+            <Label text="Harper White" class="chat-name" />
+            <Label text="Sure, let's finalize tomorrow!" class="chat-preview" />
+          </StackLayout>
+          <Label col="2" text="1m" class="chat-time" />
+        </GridLayout>
+
+      </StackLayout>
+
+    </ScrollView>
+
+    <!-- BOTTOM NAVIGATION BAR -->
     <FlexboxLayout row="1" justifyContent="space-around" class="bottom-bar">
-   <Label text="&#xe88a;" class="m-icon" tap="goHome" />
-      <Label text="&#xf07f;" class="m-icon" tap="goFeed" />
-      <Label text="&#xe147;" class="m-icon" tap="goAddPost" />
+      <Label text="&#xe88a;" class="m-icon" tap="goHome" />
+
+      <Label text="&#xe147;" class="m-icon" />
       <Label text="&#xe0d8;" class="m-icon active" tap="goMessages" />
       <Label text="&#xe853;" class="m-icon" tap="goProfile" />
     </FlexboxLayout>
+
   </GridLayout>
 </Page>

@@ -1,0 +1,63 @@
+.addpost-container {
+  padding: 20;
+  background-color: #fff;
+}
+
+/* Upload section */
+.upload-box {
+  border-width: 2;
+  border-color: #e0e0e0;
+  border-radius: 12;
+  padding: 40 10;
+  margin-bottom: 20;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.upload-icon {
+  width: 70;
+  height: 70;
+  opacity: 0.6;
+  margin-bottom: 10;
+}
+
+.upload-text {
+  color: #888;
+  font-size: 16;
+  text-align: center;
+}
+
+/* Caption input */
+.caption-box {
+  border-width: 1;
+  border-color: #e0e0e0;
+  border-radius: 12;
+  padding: 10;
+  margin-bottom: 20;
+  background-color: #fff;
+}
+
+.caption-input {
+  font-size: 16;
+  color: #333;
+  placeholder-color: #aaa;
+  height: 120;
+  background-color: #fafafa;
+}
+
+/* Share button */
+.share-btn {
+  background-color: #f9622e;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30;
+  height: 50;
+  margin-top: 10;
+  text-transform: uppercase;
+}
+
+/* Optional: make scroll view blend */
+ScrollView {
+  background-color: #fafafa;
+}

@@ -38,3 +38,18 @@ exports.goProfile = function () {
         clearHistory: true
     });
 };
+
+
+exports.onOpenChat = function () {
+    // Navigate to chat-view-page.xml
+    Frame.topmost().navigate({
+        moduleName: "tabs/chat-view-page",
+        animated: true,
+        clearHistory: true,
+        transition: {
+            name: "slideLeft",
+            duration: 300,
+            curve: "easeIn"
+        }
+    });
+};
